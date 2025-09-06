@@ -1,0 +1,19 @@
+.bg-color{
+    background-color: rgb(6, 34, 86);
+}
+
+.img{
+    height: 120px;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.bg-image {
+    background: linear-gradient(to bottom, rgb(124, 124, 124), rgba(255, 255, 255, 0));
+    /* background: linear-gradient(to bottom, white 0%, rgba(255, 255, 255, 0.7) 50%, transparent 100%); */
+    padding: 20px 0;
+    height: 20vh;
+}
+
