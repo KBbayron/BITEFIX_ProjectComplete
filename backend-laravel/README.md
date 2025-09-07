@@ -1,12 +1,18 @@
-<center><h1> Backend Laravel v.10 </h1></center><br>
+<center><h1> Backend Laravel v.1 </h1></center>
 
-<h3> Microservices architecture backend </h3> <br>
+<h3> Microservices architecture backend <br>
+Base endponit <br>
+http://127.0.0.1:8000/api/</h3><br>
+
 
 # Comands used to create project
 ## 1. Start Laravel project in terminal
 Note: "laravel-backend" is the name of proyect
 
     laravel new laravel-backend
+If not work try install in terminal
+
+    composer create-project laravel/laravel laravel-backend
 ## 2. Select "none" option, only for backend <br>
 Which starter kit would you like to install? <br>
 [none ] None <br>
@@ -44,15 +50,15 @@ Would you like to run npm install and npm run build?<br>
     yes
 # Run Laravel service
 
-## Install Composer in the machine
+## To read Composer files
     composer install
 
 ## Start Laravel Service 
 
     php artisan serve
 
-## Crear proyecto y acceder 
-    composer create-project laravel/laravel backend-laravel
+After, enter in project created
+
     cd backend-laravel
 
 ## Create models, controllers y migrations (en caso de ser necesaria la migracion)
@@ -60,37 +66,12 @@ Would you like to run npm install and npm run build?<br>
     php artisan make:model Inventario -mcr
     php artisan make:model Venta -mcr
 
-## Para correr migraciones
+## Execute migrations
     php artisan migrate
 
-## Endponit base
+## Base endpoint
 http://127.0.0.1:8000/api/
 
 
 
-
-
-
-
-## Al clonar
-    composer install
-
-## Iniciar el servicio
-
-    php artisan serve
-
-## Crear proyecto y acceder 
-    composer create-project laravel/laravel backend-laravel
-    cd backend-laravel
-
-## crear modelos, controlador y migracion (en caso de ser necesaria la migracion)
-    php artisan make:model Cliente -mcr
-    php artisan make:model Inventario -mcr
-    php artisan make:model Venta -mcr
-
-## Para correr migraciones
-    php artisan migrate
-
-## Endponit base
-http://127.0.0.1:8000/api/
 

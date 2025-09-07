@@ -1,4 +1,131 @@
-<center><h1>Proyecto Desarrollo con <br> plataformas abiertas</h1></center>
+<center><h1>BiteFix <br>
+Repository
+</h1></center>
+
+[Ver en español](#descripcion-del-proyecto) 
+# Project Description
+<p>
+    API for the sales platform of the "Open Platforms Development" course. This project is built with a **Laravel backend**, which initially provides CRUD operations for each database table, and a **frontend built with JavaScript**.
+</p>
+
+## Project Members
+Bayron Leiva Rojas <br>
+Jonathan Rivera
+
+<h2>Database Diagram</h2>
+<center><img src="./backend-laravel/img/TiendaDeRopa.jpg" alt="Example" width="400"/></center> <br
+>
+
+You can see more details at the following link:  
+<a>https://drive.google.com/file/d/1oXBcdNCqPskvvS8atKvRwHA2U7n4fxAy/view?usp=drive_link</a>
+
+---
+
+# API Endpoints
+Headers for Postman requests for all endpoints:<br>
+| Key           | Value                |
+|---------------|---------------------|
+| Accept        | application/json    |
+| Content-Type  | application/json    |
+
+Base URL: `http://127.0.0.1:8000/api/` <br><br>  
+Example:  
+- GET => `http://127.0.0.1:8000/api/clientes/5`  
+- DELETE => `http://127.0.0.1:8000/api/inventario`
+
+---
+
+## **Clients**
+- **GET /clientes** - Get all clients  
+- **GET /clientes/3** - Get a specific client with `id=3`  
+- **DELETE /clientes/1** - Delete a client with `id=1`  
+- **POST /clientes** - Create a new client  
+
+Example body:
+
+    {
+        "nombre": "John", 
+        "apellido1": "Doe",
+        "apellido2": "",
+        "telefono": "112233445566",
+        "email": "john@example.com"
+    }
+
+- **PUT /clientes** - Create a new client
+
+Example body:
+
+    {
+        "nombre": "", 
+        "apellido1": "",
+        "apellido2": "",
+        "telefono": "778899445566", // only updating the phone
+        "email": ""
+    }
+
+## **Inventario**
+- **GET /inventario** - Get all items  
+- **GET /inventario/8** - Get a specific item with `id=8`  
+- **DELETE /inventario/10** - Delete an item with `id=10`  
+- **POST /inventario** - Create a new item  
+
+Example body:
+
+    {
+        "nombre": "Nike Cap", 
+        "descripcion": "Description of Nike Cap",
+        "MARCA": "Nike",
+        "MODELO": "version 1",
+        "precio": 1500,
+        "in_stock": 5
+    }
+
+- **PUT /inventario/9** - Update an item with id=9
+
+Example body:
+
+    {
+        "nombre": "", 
+        "descripcion": "",
+        "MARCA": "",
+        "MODELO": "version 5", // only updating model and price
+        "precio": 1800,
+        "in_stock": 0
+    }
+
+## **Sales**
+- **GET /ventas** - Get all sales  
+- **GET /ventas/5** - Get a specific sale with `id=5`  
+- **DELETE /ventas/7** - Delete a sale with `id=7`  
+- **POST /ventas** - Create a new sale  
+
+Example body:
+
+    {
+        "id_cliente": 1,
+        "id_articulo": 6,
+        "Unidades": 1,
+        "total": 2
+    }
+
+- **PUT /ventas/5** - Update a sale with id=5
+
+Example body:
+
+    {
+        "id_cliente": 1,
+        "id_articulo": 6, // updating all values
+        "Unidades": 1,
+        "total": 2
+    }
+
+---
+---
+--- 
+<br> <br>
+
+
+<center><h1>BitFix  <br> Repositorio</h1></center> <br>
 
 # Descripcion del proyecto
 <p>
@@ -10,10 +137,10 @@ Bayron Leiva Rojas <br>
 Jonathan Rivera
 
 <h2>Diagrama de base de datos</h2>
-<center><img src="./backend-laravel/img/TiendaDeRopa.jpg" alt="Ejemplo" width="400"/></center>
+<center><img src="./backend-laravel/img/TiendaDeRopa.jpg" alt="Ejemplo" width="400"/></center><br>
 
 Puedes ver con más detalle en el siguiente link:
-<h4> https://drive.google.com/file/d/1oXBcdNCqPskvvS8atKvRwHA2U7n4fxAy/view?usp=drive_link</h4>
+<a> https://drive.google.com/file/d/1oXBcdNCqPskvvS8atKvRwHA2U7n4fxAy/view?usp=drive_link</a>
 
 
 # Endpoints de la API
@@ -125,4 +252,6 @@ body ejemplo:
         "Unidades": 1,
         "total": 2
     }
+---
+---
 ---
