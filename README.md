@@ -1,6 +1,6 @@
-<center><h1>BiteFix <br>
+<h1 align="center">BiteFix <br>
 Repository
-</h1></center>
+</h1>
 
 [Ver en español](#descripcion-del-proyecto) 
 # Project Description
@@ -125,7 +125,9 @@ Example body:
 <br> <br>
 
 
-<center><h1>BitFix  <br> Repositorio</h1></center> <br>
+<h1 align="center">BiteFix <br>
+Repositorio
+</h1>
 
 # Descripcion del proyecto
 <p>
