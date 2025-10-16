@@ -8,7 +8,7 @@ http://127.0.0.1:8000/api/</h3><br>
 # Comands used to create project
 ## 1. Start Laravel project in terminal
 Note: "laravel-backend" is the name of proyect
-```bash
+```bash php
 laravel new laravel-backend
 ```
 If not work try install in terminal
