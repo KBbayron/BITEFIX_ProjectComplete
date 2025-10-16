@@ -42,27 +42,27 @@ Example:
 - **POST /clientes** - Create a new client  
 
 Example body:
-
-    {
-        "nombre": "John", 
-        "apellido1": "Doe",
-        "apellido2": "",
-        "telefono": "112233445566",
-        "email": "john@example.com"
-    }
-
+```json
+{
+    "nombre": "John", 
+    "apellido1": "Doe",
+    "apellido2": "",
+    "telefono": "112233445566",
+    "email": "john@example.com"
+}
+```
 - **PUT /clientes** - Create a new client
 
 Example body:
-
-    {
-        "nombre": "", 
-        "apellido1": "",
-        "apellido2": "",
-        "telefono": "778899445566", // only updating the phone
-        "email": ""
-    }
-
+```json
+{
+    "nombre": "", 
+    "apellido1": "",
+    "apellido2": "",
+    "telefono": "778899445566", // only updating the phone
+    "email": ""
+}
+```
 ## **Inventario**
 - **GET /inventario** - Get all items  
 - **GET /inventario/8** - Get a specific item with `id=8`  
@@ -70,29 +70,29 @@ Example body:
 - **POST /inventario** - Create a new item  
 
 Example body:
-
-    {
-        "nombre": "Nike Cap", 
-        "descripcion": "Description of Nike Cap",
-        "MARCA": "Nike",
-        "MODELO": "version 1",
-        "precio": 1500,
-        "in_stock": 5
-    }
-
+```json
+{
+    "nombre": "Nike Cap", 
+    "descripcion": "Description of Nike Cap",
+    "MARCA": "Nike",
+    "MODELO": "version 1",
+    "precio": 1500,
+    "in_stock": 5
+}
+```
 - **PUT /inventario/9** - Update an item with id=9
 
 Example body:
-
-    {
-        "nombre": "", 
-        "descripcion": "",
-        "MARCA": "",
-        "MODELO": "version 5", // only updating model and price
-        "precio": 1800,
-        "in_stock": 0
-    }
-
+```json
+{
+    "nombre": "", 
+    "descripcion": "",
+    "MARCA": "",
+    "MODELO": "version 5", // only updating model and price
+    "precio": 1800,
+    "in_stock": 0
+}
+```
 ## **Sales**
 - **GET /ventas** - Get all sales  
 - **GET /ventas/5** - Get a specific sale with `id=5`  
@@ -100,25 +100,25 @@ Example body:
 - **POST /ventas** - Create a new sale  
 
 Example body:
-
-    {
-        "id_cliente": 1,
-        "id_articulo": 6,
-        "Unidades": 1,
-        "total": 2
-    }
-
+```json
+{
+    "id_cliente": 1,
+    "id_articulo": 6,
+    "Unidades": 1,
+    "total": 2
+}
+```
 - **PUT /ventas/5** - Update a sale with id=5
 
 Example body:
-
-    {
-        "id_cliente": 1,
-        "id_articulo": 6, // updating all values
-        "Unidades": 1,
-        "total": 2
-    }
-
+```json
+{
+    "id_cliente": 1,
+    "id_articulo": 6, // updating all values
+    "Unidades": 1,
+    "total": 2
+}
+```
 ---
 ---
 --- 
@@ -168,27 +168,28 @@ delete => http://127.0.0.1:8000/api/invetario
 - POST /clientes - Crear un nuevo cliente
 
 body ejemplo:
-
-    body ejemplo:
-    {
-        "nombre": "Jonh", 
-        "apellido1":"Doe",
-        "apellido2":"",
-        "telefono":"112233445566",
-        "email":"john@example.com"
-    }
+```json
+{
+    "nombre": "Jonh", 
+    "apellido1":"Doe",
+    "apellido2":"",
+    "telefono":"112233445566",
+    "email":"john@example.com"
+}
+```
 ---
 - PUT /api/clientes/8 - Actualizar un cliente con id=8
 
 body ejemplo:
-
-    {
-        "nombre": "", 
-        "apellido1":"",
-        "apellido2":"",
-        "telefono":"778899445566", //solo modifica el telefono
-        "email":""
-    }
+```json
+{
+    "nombre": "", 
+    "apellido1":"",
+    "apellido2":"",
+    "telefono":"778899445566", //solo modifica el telefono
+    "email":""
+}
+```
 ---
 
 
@@ -202,29 +203,30 @@ body ejemplo:
 - POST /inventario - Crear un nuevo artículo
 
 body ejemplo:
-
-    {
-        "nombre": "Gorra Nike", 
-        "descripcion":"Descripcion de Gorra Nike",
-        "MARCA":"Nike",
-        "MODELO":"version 1",
-        "precio":1.500,
-        "in_stock": 5
-    }
+```json
+{
+    "nombre": "Gorra Nike", 
+    "descripcion":"Descripcion de Gorra Nike",
+    "MARCA":"Nike",
+    "MODELO":"version 1",
+    "precio":1.500,
+    "in_stock": 5
+}
+```
 ---
 - PUT /api/inventario/9 - Actualizar un artículo con id=9
 
 body ejemplo:
-
-    {
-        "nombre": "", 
-        "descripcion":"",
-        "MARCA":"",
-        "MODELO":"version 5", // solo modifica modelo y precio
-        "precio":1.800,
-        "in_stock": 
-    }
-
+```json
+{
+    "nombre": "", 
+    "descripcion":"",
+    "MARCA":"",
+    "MODELO":"version 5", // solo modifica modelo y precio
+    "precio":1.800,
+    "in_stock": 
+}
+```
 ## **Ventas**
 
 - GET /api/ventas - Obtener todas las ventas
@@ -236,24 +238,26 @@ body ejemplo:
 - POST /api/ventas - Crear una nueva venta
 
 body ejemplo:
-
-    {
-        "id_cliente":1,
-        "id_articulo":6,
-        "Unidades": 1,
-        "total": 2
-    }
+```json
+{
+    "id_cliente":1,
+    "id_articulo":6,
+    "Unidades": 1,
+    "total": 2
+}
+```
 ---
 - PUT /api/ventas/5 - Actualizar una venta con id=5
 
 body ejemplo:
-
-    {
-        "id_cliente":1,
-        "id_articulo":6, //modifica todos los valores
-        "Unidades": 1,
-        "total": 2
-    }
+```json
+{
+    "id_cliente":1,
+    "id_articulo":6, //modifica todos los valores
+    "Unidades": 1,
+    "total": 2
+}
+```
 ---
 ---
 ---
