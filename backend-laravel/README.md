@@ -1,6 +1,6 @@
 <center><h1> Backend Laravel v.1 </h1></center>
 
-<h3> Microservices architecture backend <br>
+<h3> Layered Architecture backend <br>
 Base endponit <br>
 http://127.0.0.1:8000/api/</h3><br>
 
